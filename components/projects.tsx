@@ -27,7 +27,7 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "ClassMates",
+      title: "ClassMates (In-progress)",
       description: "App that connects students within the same classes for collaboration, study groups, and resource sharing.",
       image: "/classmates.png",
       tags: ["Node.js", "TypeScript", "React", "Tesseract.js"],
