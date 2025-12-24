@@ -27,20 +27,20 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard",
-      image: "/modern-ecommerce-website.png",
-      tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "ClassMates",
+      description: "App that connects students within the same classes for collaboration, study groups, and resource sharing.",
+      image: "/classmates.png",
+      tags: ["Node.js", "TypeScript", "React", "Tesseract.js"],
+      github: "https://github.com/kennedynguyen1/ucsb-class-chat",
+      live: "https://drive.google.com/drive/folders/1mewC0iotdOfKw9t4YzdqYa2krFvvlsMt?usp=sharing",
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat app with AI-powered responses, WebSocket connections, and message history",
-      image: "/ai-chat-interface.png",
-      tags: ["React", "Node.js", "OpenAI", "Socket.io"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "Computer Vision Model Shark Game",
+      description: "Interactive minigames which simulate training computer vision models to help young users better understand machine learning concepts. It was presented  at the UN Ocean Conference 2025. There is another version that is a story game found on my LinkedIn.",
+      image: "/UN-Ocean-Conference.jpeg",
+      tags: ["React", "TypeScript"],
+      github: "https://github.com/scotthnguyen/bubble-vision-bliss",
+      live: "https://drive.google.com/drive/folders/1ArV7HOjYdIGuTBo_sfTULqzCRIq_0ef5?usp=drive_link",
     },
     {
       title: "Analytics Dashboard",

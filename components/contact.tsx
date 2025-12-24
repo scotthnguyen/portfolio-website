@@ -113,7 +113,7 @@ export default function Contact() {
           style={{ transitionDelay: "400ms" }}
         >
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:scottowandmore@gmail.com"
             className="flex items-center gap-4 p-6 bg-card rounded-xl border border-border hover:border-primary transition-all hover:scale-105"
           >
             <div className="p-3 bg-primary/10 rounded-lg">
@@ -121,12 +121,12 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-bold mb-1">Email</h3>
-              <p className="text-sm text-muted-foreground">your.email@example.com</p>
+              <p className="text-sm text-muted-foreground">scottowandmore@gmail.com</p>
             </div>
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/scottnguyencodes/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 p-6 bg-card rounded-xl border border-border hover:border-primary transition-all hover:scale-105"

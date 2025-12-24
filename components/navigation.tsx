@@ -42,7 +42,7 @@ export default function Navigation() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/scotthnguyen"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
@@ -50,7 +50,7 @@ export default function Navigation() {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/scottnguyencodes/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
@@ -58,7 +58,7 @@ export default function Navigation() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:scottowandmore@gmail.com"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <Mail className="w-5 h-5" />

@@ -52,9 +52,8 @@ export default function About() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About Me</h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-16 max-w-3xl leading-relaxed">
-            I'm a passionate software engineer with expertise in building modern web applications. I specialize in
-            React, Next.js, and TypeScript, creating seamless digital experiences that combine beautiful design with
-            robust engineering.
+            I'm a passionate software engineer with expertise in databases. I specialize in
+            Python, SQL, and web development, creating efficient and scalable solutions. I sometimes dabble with Machine Learning and AI!
           </p>
         </div>
 
