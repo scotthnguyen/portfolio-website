@@ -73,7 +73,7 @@ export default function Hero() {
         <div className="animate-slide-up opacity-0 [animation-delay:200ms]">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance">
             Software Engineer
-            <span className="block text-primary mt-2">Building Digital Experiences</span>
+            <span className="block text-primary mt-2">Scott Nguyen</span>
           </h1>
         </div>
 

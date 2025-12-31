@@ -43,12 +43,12 @@ export default function Projects() {
       live: "https://drive.google.com/drive/folders/1ArV7HOjYdIGuTBo_sfTULqzCRIq_0ef5?usp=drive_link",
     },
     {
-      title: "Analytics Dashboard",
-      description: "Data visualization platform with interactive charts, real-time updates, and export functionality",
-      image: "/analytics-dashboard.png",
-      tags: ["Next.js", "D3.js", "Tailwind", "Redis"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "Manga Notifier Automation",
+      description: "A serverless, mobile-first automation that tracks manga reading progress and sends reminder emails when new chapters are available.",
+      image: "/miyamoto.png",
+      tags: ["IOS Shortcut", "Node.js", "Mangadex API", "Github Actions"],
+      github: "https://github.com/scotthnguyen/automated-alerts",
+      live: "https://drive.google.com/drive/folders/1ah2cDLtvNhXcyvoHFCJ6M7vbdaf0jqlk?usp=sharing",
     },
     {
       title: "Social Media Manager",
