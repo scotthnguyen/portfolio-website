@@ -51,7 +51,7 @@ export default function About() {
           <div className="flex justify-start">
             <div className="relative w-64 h-64 rounded-2xl overflow-hidden border border-border shadow-lg">
               <Image
-                src="/profile.png"
+                src="/profile.webp"
                 alt="Profile picture"
                 fill
                 className="object-cover"
