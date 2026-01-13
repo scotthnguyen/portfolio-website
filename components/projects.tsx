@@ -31,7 +31,7 @@ export default function Projects() {
       description: "App that connects students within the same classes for collaboration, study groups, and resource sharing.",
       image: "/classmates.png",
       tags: ["Node.js", "TypeScript", "React", "Tesseract.js"],
-      github: "https://github.com/kennedynguyen1/ucsb-class-chat",
+      github: "https://github.com/scotthnguyen/ucsb-class-chat",
       live: "https://drive.google.com/drive/folders/1mewC0iotdOfKw9t4YzdqYa2krFvvlsMt?usp=sharing",
     },
     {
@@ -51,12 +51,20 @@ export default function Projects() {
       live: "https://drive.google.com/drive/folders/1ah2cDLtvNhXcyvoHFCJ6M7vbdaf0jqlk?usp=sharing",
     },
     {
-      title: "Social Media Manager",
-      description: "Social media scheduling tool with multi-platform support, analytics, and content calendar",
-      image: "/social-media-dashboard.png",
-      tags: ["React", "Express", "MongoDB", "AWS"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "AI Study Planner",
+      description: "AI-powered study planning assistant built on Cloudflare that creates and adapts exam study plans using chat, persistent memory, and real-time constraints.",
+      image: "/ai-study-planner.png",
+      tags: ["Cloudflare Workers", "Workers AI", "Durable Objects", "React", "TypeScript"],
+      github: "https://github.com/scotthnguyen/cf_ai_study_planner_agent",
+      live: "https://cf-ai-study-planner-agent.pages.dev/",
+    },
+    {
+      title: "Burnout Radar",
+      description: "App that student burn out before it happens by modeling workloads, sleep, and voice detected stress",
+      image: "/burnout.png",
+      tags: ["TypeScript", "MongoDB", "Gemini API", "Deepgram", "Google OAuth (Calendar)"],
+      github: "https://github.com/Nopesy/UCSB-Hacks-XII",
+      live: "https://devpost.com/software/burnout-radar-h2do4k?ref_content=my-projects-tab&ref_feature=my_projects",
     },
   ]
 

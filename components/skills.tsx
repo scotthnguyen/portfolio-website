@@ -24,34 +24,44 @@ export default function Skills() {
   }, [])
 
   const skillCategories = [
-    {
-      category: "Frontend",
-      skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 80 },
-      ],
-    },
-    {
-      category: "Backend",
-      skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 80 },
-      ],
-    },
-    {
-      category: "Tools & Others",
-      skills: [
-        { name: "Git/GitHub", level: 95 },
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "CI/CD", level: 85 },
-      ],
-    },
-  ]
+  {
+    category: "Frontend",
+    skills: [
+      { name: "React / Next.js", level: 85 },
+      { name: "TypeScript", level: 80 },
+      { name: "HTML & CSS", level: 90 },
+      { name: "UI State & Animations", level: 80 },
+    ],
+  },
+  {
+    category: "Backend & APIs",
+    skills: [
+      { name: "Node.js", level: 75 },
+      { name: "Python", level: 85 },
+      { name: "REST APIs", level: 80 },
+      { name: "Cloudflare Workers", level: 80 },
+    ],
+  },
+  {
+    category: "Analytics & Data",
+    skills: [
+      { name: "Power BI", level: 85 },
+      { name: "Data Modeling & DAX", level: 80 },
+      { name: "SQL", level: 75 },
+      { name: "Data Visualization", level: 85 },
+    ],
+  },
+  {
+    category: "Cloud & Tools",
+    skills: [
+      { name: "Durable Objects (State)", level: 75 },
+      { name: "Workers AI / LLM Integration", level: 80 },
+      { name: "Git & GitHub", level: 85 },
+      { name: "Debugging & Testing", level: 80 },
+    ],
+  },
+]
+
 
   return (
     <section ref={sectionRef} id="skills" className="py-32 px-6">
