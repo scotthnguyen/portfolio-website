@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
+import { useTilt } from "@/hooks/use-tilt"
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false)
@@ -83,14 +84,24 @@ export default function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={project.title}
-              className={`group bg-card rounded-xl border border-border overflow-hidden hover:border-primary transition-all duration-500 hover:scale-[1.02] ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-              }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
+          {projects.map((project, index) => {
+            const ProjectCard = () => {
+              const tilt = useTilt()
+              return (
+                <div
+                  key={project.title}
+                  ref={tilt.ref}
+                  onMouseMove={tilt.handleMouseMove}
+                  onMouseLeave={tilt.handleMouseLeave}
+                  className={`group bg-card rounded-xl border border-border overflow-hidden hover:border-primary transition-all duration-300 ${
+                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+                  }`}
+                  style={{ 
+                    transitionDelay: `${index * 150}ms`,
+                    transform: tilt.transform,
+                    transition: tilt.transform ? 'transform 0.1s ease-out' : 'all 0.3s ease-out'
+                  }}
+                >
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={project.image || "/placeholder.svg"}
@@ -134,8 +145,11 @@ export default function Projects() {
                   </a>
                 </div>
               </div>
-            </div>
-          ))}
+                </div>
+              )
+            }
+            return <ProjectCard key={project.title} />
+          })}
         </div>
       </div>
     </section>

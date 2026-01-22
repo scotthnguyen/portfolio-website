@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { useTilt } from "@/hooks/use-tilt"
 
 type ExperienceItem = {
   name: string
@@ -44,16 +47,28 @@ export default function Experience() {
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
-          {items.map((item) => (
-            <Link
-              key={item.name}
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col items-center text-center"
-            >
-              {/* Logo tile */}
-              <div className="relative h-44 w-44 rounded-3xl overflow-hidden bg-card border border-border shadow-sm transition-all duration-300 group-hover:scale-[1.03] group-hover:border-primary">
+          {items.map((item) => {
+            const ExperienceCard = () => {
+              const tilt = useTilt()
+              return (
+                <Link
+                  key={item.name}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-center text-center"
+                >
+                  {/* Logo tile */}
+                  <div 
+                    ref={tilt.ref}
+                    onMouseMove={tilt.handleMouseMove}
+                    onMouseLeave={tilt.handleMouseLeave}
+                    className="relative h-44 w-44 rounded-3xl overflow-hidden bg-card border border-border shadow-sm transition-all duration-300 group-hover:border-primary"
+                    style={{
+                      transform: tilt.transform,
+                      transition: tilt.transform ? 'transform 0.1s ease-out' : 'all 0.3s ease-out'
+                    }}
+                  >
                 <Image
                   src={item.logo}
                   alt={`${item.name} logo`}
@@ -72,8 +87,11 @@ export default function Experience() {
                   {item.role}
                 </p>
               </div>
-            </Link>
-          ))}
+                </Link>
+              )
+            }
+            return <ExperienceCard key={item.name} />
+          })}
         </div>
       </div>
     </section>

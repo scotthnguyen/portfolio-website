@@ -5,10 +5,12 @@ import Skills from "@/components/skills"
 import Contact from "@/components/contact"
 import Navigation from "@/components/navigation"
 import Experience from "@/components/experience"
+import ScrollProgress from "@/components/scroll-progress"
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <ScrollProgress />
       <Navigation />
       <Hero />
       <About />
