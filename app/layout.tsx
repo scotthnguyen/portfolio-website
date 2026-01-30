@@ -1,15 +1,20 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Press_Start_2P } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const pressStart = Press_Start_2P({ 
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-press-start"
+})
 
 export const metadata: Metadata = {
-  title: "Software Engineer Portfolio",
-  description: "Modern portfolio showcasing software engineering projects and skills with cutting-edge animations",
+  title: "Scott Nguyen - Terraria Portfolio",
+  description: "Pixel-perfect portfolio showcasing software engineering in Terraria style",
   generator: "v0.app",
   icons: {
     icon: [
@@ -37,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`font-sans antialiased`}>
+      <body className={`${pressStart.variable} antialiased bg-background`} style={{ fontFamily: 'var(--font-press-start), monospace' }}>
         {children}
         <Analytics />
       </body>
